@@ -50,18 +50,18 @@ const links = (
   return (
     <div className="navbar bg-base-50 shadow-sm px-4 md:px-10 lg:px-20">
 
-      {/* LEFT - LOGO */}
+      {/* LOGO */}
       <div className="flex-1 flex items-center gap-2">
         <Image
           src="/logo.png"
           alt="Logo"
-          width={40}
-          height={40}
-          className="w-30 h-10 object-contain"
+          width={60}
+          height={60}
+          className="w-40 h-20 object-contain"
         />
       </div>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE */}
       <div className="flex-none lg:hidden">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost">
@@ -90,7 +90,7 @@ const links = (
         </div>
       </div>
 
-      {/* DESKTOP MENU */}
+      {/* DESKTOP*/}
       <div className="hidden lg:flex flex-none">
         <ul className="menu menu-horizontal px-1 gap-2">
        {links}
