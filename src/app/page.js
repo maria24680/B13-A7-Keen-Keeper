@@ -4,7 +4,7 @@ import F_card from "./components/F_card";
 
 
 export default async function Home() {
-  const res=await fetch("http://localhost:3000/friends.json")
+  const res=await fetch("https://b13-a7-keen-keeper-psi.vercel.app/friends.json",{cache:"no-store"})
 const friends = await res.json();
 
   return (
