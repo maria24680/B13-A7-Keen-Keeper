@@ -4,7 +4,7 @@ import F_card from "./components/F_card";
 
 
 export default async function Home() {
-  const res=await fetch("https://b13-a7-keen-keeper-psi.vercel.app/friends.json",{cache:"no-store"})
+  const res=await fetch("http://localhost:3000/friends.json")
 const friends = await res.json();
 
   return (
@@ -18,7 +18,7 @@ const friends = await res.json();
 <h1 className="font-bold text-3xl md:text-5xl text-black">Friends to keep close in your life</h1>
 <p className="text-lg opacity-60">Your personal shelf of meaningful connections. Browse, tend, and nurture the <br></br>
 relationships that matter most.</p>
-<button className="btn btn-xs sm:btn-sm md:btn-sm lg:btn-md  bg-green-800 hover:bg-green-950"><Plus></Plus>Add Friends</button>
+<button className="btn btn-xs sm:btn-sm md:btn-sm lg:btn-md  bg-green-800 hover:bg-green-950 text-white"><Plus></Plus>Add Friends</button>
 </div>
 {/* card_1 */}
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

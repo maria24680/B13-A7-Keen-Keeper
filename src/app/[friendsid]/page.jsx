@@ -8,7 +8,7 @@ import P_count_cards from "../components/P_count_cards";
 
 const Profile = async({params}) => {
      const {friendsid}=await params;
-    const res=await fetch("https://b13-a7-keen-keeper-psi.vercel.app/friends.json",{cache:"no-store"})
+    const res=await fetch("http://localhost:3000/friends.json")
     const data= await res.json();
 
     const friend=data.find(f=>f.id==friendsid)
