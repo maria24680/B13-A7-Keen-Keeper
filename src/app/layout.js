@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Keen-Keeper",
   description: "Connect with friends",
-  icon:{icon:"/icon.png"}
+  
 };
 
 export default function RootLayout({ children }) {
