@@ -19,26 +19,26 @@ const Profile = async({params}) => {
     return (
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-6 p-5 items-start bg-gray-100">
 
-  {/* LEFT */}
+  
   <div className="md:col-span-2 space-y-6">
 
     <P_card friend={friend} />
 
-    {/* Snooze Section */}
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer hover:bg-green-900 hover:text-white hover:scale-90 transition-all duration-300" >
+    
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
   <h2 className="font-semibold text-lg flex items-center justify-center gap-2">
     <Bell /> Snooze
   </h2>
 </div>
 
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer  hover:bg-green-900 hover:text-white hover:scale-90 transition-all duration-300">
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
   <h2 className="font-semibold text-lg flex items-center justify-center gap-2">
     <Archive /> Archive
   </h2>
 </div>
 
-<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center cursor-pointer text-red-600 hover:bg-red-600 hover:text-white hover:scale-90 transition-all duration-300">
-  <h2 className="font-semibold text-lg flex items-center justify-center gap-2 ">
+<div className="bg-white rounded-xl shadow p-4 space-y-3 text-center">
+  <h2 className="font-semibold text-lg flex items-center justify-center gap-2 text-red-600">
     <Trash /> Delete
   </h2>
 </div>
@@ -46,12 +46,12 @@ const Profile = async({params}) => {
 
   </div>
 
-  {/* RIGHT */}
+  
   <div className="md:col-span-4 space-y-6">
 
     <P_count_cards friend={friend} />
 
-    {/* Relationship Goal */}
+    
     <div className="bg-white rounded-xl shadow p-5 flex justify-between items-center">
       <div className="py-12">
         <h2 className="font-semibold text-lg">Relationship Goal</h2>
@@ -62,13 +62,13 @@ const Profile = async({params}) => {
       </button>
     </div>
 
-    {/* Extra Section */}
+    {/* Extra*/}
    <div className="bg-white rounded-xl shadow p-5 space-y-4">
 
   <h2 className="font-semibold text-lg">Quick Check-In</h2>
 
+<P_btn friend={friend}></P_btn>
 
- <P_btn friend={friend}></P_btn>
 
 </div>
 
