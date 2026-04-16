@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
-import F_card from "./components/F_card";
+import F_card from "./Components/F_card";
 
 
 

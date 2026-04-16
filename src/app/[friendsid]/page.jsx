@@ -1,7 +1,8 @@
 
 import { Archive, Bell, MessageCircle, Phone, Trash, Video } from "lucide-react";
 import P_card from "../Components/P_card";
-import P_count_cards from "../components/P_count_cards";
+import P_count_cards from "../Components/P_count_cards";
+import P_btn from "../Components/profile/P_btn";
 
 
 
@@ -64,7 +65,7 @@ const Profile = async({params}) => {
 
   <h2 className="font-semibold text-lg">Quick Check-In</h2>
 
-
+<P_btn friend={friend}></P_btn>
 
 
 </div>

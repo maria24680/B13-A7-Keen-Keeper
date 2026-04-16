@@ -3,6 +3,10 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
+import Provider from "./Line/providers";
+import { ToastContainer } from "react-toastify";
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,10 +31,14 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar></Navbar>
+        <Provider>
+
+              <Navbar></Navbar>
         {children}
-        <Footer>
-        </Footer>
+         <Footer></Footer>
+             <ToastContainer />
+      </Provider>
+         
         </body>
     </html>
   );
