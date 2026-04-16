@@ -14,6 +14,7 @@ const F_card = ({f}) => {
       src={f.picture}
       alt={f.name}
       fill
+      sizes={50}
       className="object-cover"
     />
   </div>
