@@ -61,7 +61,7 @@ relationships that matter most.</p>
 </div>
 
 <div className="my-20">
-  <h1 className="font-bold text-xl mb-2">Your Friends</h1>
+  <h1 className="font-bold text-xl text-center md-text-left mb-2">Your Friends</h1>
 <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
 
 {

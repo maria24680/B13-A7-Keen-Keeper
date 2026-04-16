@@ -7,7 +7,7 @@ const P_btn = ({ friend }) => {
   const { addTimeline } = useTimeline();
 
   return (
-    <div className="flex gap-3 items-center justify-evenly">
+    <div className="grid grid-col-1 md:grid-cols-3 gap-3 items-center justify-evenly">
 
       <button className="flex-1 flex flex-col items-center justify-center p-10 shadow-lg cursor-pointer space-y-2 hover:bg-green-600 hover:text-white transition-all duration-300" onClick={() => addTimeline("Call", friend.name)}>
         <Phone size={30} />
