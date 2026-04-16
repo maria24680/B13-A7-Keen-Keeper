@@ -14,6 +14,7 @@ const P_card = ( {friend}) => {
       src={friend.picture}
       alt={friend.name}
       fill
+      sizes={50}
       className="object-cover"
     />
   </div>
