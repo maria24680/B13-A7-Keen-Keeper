@@ -12,7 +12,7 @@ const friends = await res.json();
 
 <div className="max-w-7xl mx-auto">
 
-{/* heading */}
+
 
 <div className="text-center space-y-5 my-10" >
 <h1 className="font-bold text-3xl md:text-5xl text-black">Friends to keep close in your life</h1>
