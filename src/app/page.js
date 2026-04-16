@@ -4,9 +4,9 @@ import F_card from "./Components/F_card";
 
 
 export default async function Home() {
-  const res=await fetch("http://localhost:3000/friends.json",{
-  cache: "no-store",
-})
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/friends.json`, {
+    cache: "no-store",
+  });
 const friends = await res.json();
 
   return (
